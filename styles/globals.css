@@ -14,3 +14,51 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#menu {
+  /* background: #000; */
+  -webkit-animation: spin 4s linear;
+  -moz-animation: spin 4s linear;
+  animation: spin 1s linear forwards;
+  /* transform: rotate(180deg); */
+}
+#menu-close {
+  /* background: #000; */
+  -webkit-animation: spin 4s linear;
+  -moz-animation: spin 4s linear;
+  animation: spin-clone 1s linear forwards;
+  transform: rotate(360deg);
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin-clone {
+  100% {
+    -moz-transform: rotate(-180deg);
+  }
+}
+@-webkit-keyframes spin-clone {
+  100% {
+    -webkit-transform: rotate(-180deg);
+  }
+}
+@keyframes spin-clone {
+  100% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
